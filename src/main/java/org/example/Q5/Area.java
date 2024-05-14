@@ -1,6 +1,7 @@
-package org.example;
+package org.example.Q5;
 import org.w3c.dom.ls.LSOutput;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Area {
@@ -19,9 +20,19 @@ public class Area {
     public static void main (String[] args){
         System.out.print("Enter length: ");
         var scanner = new Scanner(System.in);
-        double length = scanner.nextDouble();
+        double length = 0;
+        try {
+             length = scanner.nextDouble();
+        }catch (InputMismatchException e){
+            System.err.println("InputMismatchException: " + e.getMessage());
+        }
         System.out.print("Enter breadth: ");
-        double breadth = scanner.nextDouble();
+        double breadth = 0;
+        try{
+            breadth = scanner.nextDouble();
+        }catch (InputMismatchException e){
+            System.err.println("InputMismatchException: " + e.getMessage());
+        }
 
         Area areaRectangle = new Area(length,breadth);
 
