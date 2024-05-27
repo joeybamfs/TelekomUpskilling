@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 public class RunAlways {
     protected WebDriver driver;
 
+
     @BeforeMethod
     public void initialDriver(){
         driver = DriverFactory.newChromeDriver();

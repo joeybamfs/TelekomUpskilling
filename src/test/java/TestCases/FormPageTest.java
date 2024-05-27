@@ -1,8 +1,7 @@
-package testCases;
+package TestCases;
 
 import org.example.Pages.FormPage;
 import org.example.RunAlways.RunAlways;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class FormPageTest extends RunAlways {
