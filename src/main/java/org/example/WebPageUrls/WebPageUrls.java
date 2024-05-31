@@ -12,6 +12,6 @@ public class WebPageUrls {
     public static final String FILEUPLOAD = HOME + "file-upload/";
     public static final String FILEDOWNLOAD = HOME + "file-download/";
     public static final String IFRAMES = HOME + "iframes/";
-    public static final String SLIDERS = HOME + "sliders/";
+    public static final String SLIDERS = HOME + "slider/";
 
 }

@@ -12,8 +12,6 @@ import static org.example.WebPageUrls.WebPageUrls.POPUPS;
 public class ModalsPage {
     private final WebDriver driver;
 
-    Scroll scrollIntoView = new Scroll();
-
     String name;
 
 

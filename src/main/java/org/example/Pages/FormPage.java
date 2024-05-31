@@ -22,10 +22,11 @@ import static org.example.WebPageUrls.WebPageUrls.FORMS;
 public class FormPage{
     private final WebDriver driver;
 
-    Scroll scrollIntoView = new Scroll();
+    Scroll scroll;
 
     private FormPage(WebDriver driver){
         this.driver = driver;
+        scroll = new Scroll(driver);
     }
 
     public static FormPage formPage(WebDriver driver){
@@ -85,7 +86,7 @@ public class FormPage{
         Random random = new Random();
         int randomIndex = random.nextInt(colors.size());
         WebElement randomRadioButton = colors.get(randomIndex);
-        scrollIntoView.scrollAndClick(driver, colorLabel(), randomRadioButton);
+        scroll.scrollAndClick(colorLabel(), randomRadioButton);
         return colors;
     }
 
@@ -105,7 +106,7 @@ public class FormPage{
     }
 
     public WebElement emailLabel(){
-        scrollIntoView.scroll(driver, siblingsLabel());
+        scroll.scroll(siblingsLabel());
         return driver.findElement(By.cssSelector("[for=\"email\"]"));
     }
 

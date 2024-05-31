@@ -6,7 +6,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.WheelInput;
 
 public class Scroll {
-    public void scrollAndClick(WebDriver driver, WebElement element1, WebElement element2) {
+    WebDriver driver;
+
+    public Scroll(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void scrollAndClick(WebElement element1, WebElement element2) {
         WheelInput.ScrollOrigin scrollOrigin = WheelInput.ScrollOrigin.fromElement(element1);
         new Actions(driver)
                 .scrollFromOrigin(scrollOrigin, 0, 600)
@@ -14,7 +20,7 @@ public class Scroll {
                 .perform();
     }
 
-    public void scroll(WebDriver driver, WebElement element){
+    public void scroll(WebElement element){
         WheelInput.ScrollOrigin scrollOrigin = WheelInput.ScrollOrigin.fromElement(element);
         new Actions(driver)
                 .scrollFromOrigin(scrollOrigin,0,600)

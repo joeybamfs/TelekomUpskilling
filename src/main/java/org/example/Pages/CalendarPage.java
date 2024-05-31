@@ -12,8 +12,6 @@ import static org.example.WebPageUrls.WebPageUrls.CALENDARS;
 public class CalendarPage {
     private final WebDriver driver;
 
-    Scroll scrollIntoView = new Scroll();
-
     String day;
 
     public CalendarPage(WebDriver driver) {

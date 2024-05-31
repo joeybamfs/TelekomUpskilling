@@ -13,8 +13,6 @@ import static org.example.WebPageUrls.WebPageUrls.POPUPS;
 public class PopUpsPage {
     private final WebDriver driver;
 
-    Scroll scrollIntoView = new Scroll();
-
     String name;
 
 

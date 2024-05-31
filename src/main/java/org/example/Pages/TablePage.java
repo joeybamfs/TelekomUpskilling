@@ -1,6 +1,5 @@
 package org.example.Pages;
 
-import org.example.Utilies.Scroll;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +10,6 @@ import static org.example.WebPageUrls.WebPageUrls.TABLES;
 public class TablePage {
     private final WebDriver driver;
 
-    Scroll scrollIntoView = new Scroll();
 
     private TablePage(WebDriver driver){
         this.driver = driver;
