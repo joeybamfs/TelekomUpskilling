@@ -1,4 +1,4 @@
-package org.example;
+package com.practice.automation;
 
 public class Bank {
 
